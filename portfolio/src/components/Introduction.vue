@@ -47,7 +47,7 @@
 
 <script>
   export default {
-    name: 'HelloWorld',
+    name: 'IntroDuction',
 
     data: () => ({
       projectNum: 0
