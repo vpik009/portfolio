@@ -19,6 +19,8 @@
             <h1 class="text-h3">Full-Stack Developer - Intern</h1>
             <h3 class="text-h5 mt-4">Worked as an intern at CIBC Technology. Helped in the development of an e-commerce web application for building materials using VueJS, C# Entity-Framework,
 and Signalr under the supervision of the senior project manager.</h3>
+            <h3 class="caption mt-4">[Not open source as the work was done on a real application]</h3>
+
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img

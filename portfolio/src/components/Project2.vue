@@ -18,6 +18,7 @@
         <v-col col="6">
             <h1 class="text-h3">AI Conversation Agent for Heart Disease Patients</h1>
             <h3 class="text-h5 mt-4">An AI conversational agent aimed at helping heart disease patients stay motivated to adhere to their medication.</h3>
+            <h3 class="caption mt-4">[Not open source as the project may potentially be used as a real product in the future]</h3>
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
