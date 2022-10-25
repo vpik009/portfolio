@@ -11,7 +11,7 @@
         mode="out-in"
         enter-active-class="animate__animated animate__fadeIn"
         leave-active-class="animate__animated animate__fadeOutUp"
-        v-if="projectNum==1">
+        v-else-if="projectNum==1">
         <Project1 v-model="projectNum"/>
       </transition>
 
