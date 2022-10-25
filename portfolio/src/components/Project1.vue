@@ -16,10 +16,11 @@
 
     <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-top" justify="center">
         <v-col col="6">
-            <h1 class="text-h3">1. Title of the project</h1>
-            <h3 class="text-h5">Discussion here</h3>
+            <h1 class="text-h3">Full-Stack Developer - Intern</h1>
+            <h3 class="text-h5 mt-4">Worked as an intern at CIBC Technology. Helped in the development of an e-commerce web application for building materials using VueJS, C# Entity-Framework,
+and Signalr under the supervision of the senior project manager.</h3>
         </v-col>
-        <v-col col="6">
+        <v-col col="6" class="ml-10">
             <v-img
                 lazy-src="../assets/vlad.jpg"
                 max-height="300"
