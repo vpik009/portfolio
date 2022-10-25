@@ -25,8 +25,8 @@ and Signalr under the supervision of the senior project manager.</h3>
         <v-col col="6" class="ml-10">
             <v-img
                 lazy-src="../assets/ebuildfinal.png"
-                max-height="550"
-                max-width="550"
+                max-height="700"
+                max-width="700"
                 src="../assets/ebuildfinal.png"
                 class="rounded-xl justify-center"
             ></v-img>

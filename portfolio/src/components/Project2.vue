@@ -18,14 +18,16 @@
         <v-col col="6">
             <h1 class="text-h3">AI Conversation Agent for Heart Disease Patients</h1>
             <h3 class="text-h5 mt-4">An AI conversational agent aimed at helping heart disease patients stay motivated to adhere to their medication.</h3>
+            <h3 class="subtitle-1 mt-4">• Developed using AWS Lex and DynamoDB</h3>
+            <h3 class="subtitle-1">• Initially used Firebase then migrated to DynamoDB</h3>
             <h3 class="caption mt-4">[Not open source as the project may potentially be used as a real product in the future]</h3>
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
-                lazy-src="../assets/vlad.jpg"
-                max-height="300"
-                max-width="375"
-                src="../assets/vlad.jpg"
+                lazy-src="../assets/MARIAfinal.png"
+                max-height="700"
+                max-width="700"
+                src="../assets/MARIAfinal.png"
                 class="rounded-xl justify-center"
             ></v-img>
             
