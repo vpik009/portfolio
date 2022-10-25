@@ -16,7 +16,7 @@
 
     <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-top" justify="center">
         <v-col col="6">
-            <h1 class="text-h3">Title of the project</h1>
+            <h1 class="text-h3">1. Title of the project</h1>
             <h3 class="text-h5">Discussion here</h3>
         </v-col>
         <v-col col="6">

@@ -1,20 +1,20 @@
 <template>
-  <v-app>
-    <v-main>
-      {{ projectNum }}
+  <v-app >
+    <v-main class="overflow-hidden">
+
       <transition
         mode="out-in"
         leave-active-class="animate__animated animate__fadeOutUp"
         v-if="projectNum==0">
         <Introduction v-model="projectNum" />
-      </transition>
+      </transition> 
       <transition
         mode="out-in"
         enter-active-class="animate__animated animate__fadeIn"
         leave-active-class="animate__animated animate__fadeOutUp"
         v-else-if="projectNum==1">
         <Project1 v-model="projectNum"/>
-      </transition>
+      </transition> 
       <transition
         mode="out-in"
         enter-active-class="animate__animated animate__fadeIn"
