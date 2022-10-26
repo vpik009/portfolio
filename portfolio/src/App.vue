@@ -81,20 +81,18 @@ export default {
   data: () => ({
     screen_size: "lg", // xs,sm,md,lg,xl
     projectNum: 0,  // 0 = intro, 1 = first project, 2 = second project ... etc,
-    out_anim: "animate__backOutUp",
-    in_anim: "animate__backInUp",
+    out_anim: "animate__fadeInDown",
+    in_anim: "animate__fadeInUp",
   }),
   methods: {
     switchAnimation(val){
       if(val == 0){ //  down
-        console.log("changing animation to go down")
-        this.out_anim = "animate__backOutUp";
-        this.in_anim = "animate__backInUp";
+        this.out_anim = "animate__fadeOutUp";
+        this.in_anim = "animate__fadeInUp";
       }
       else{ // up
-        console.log("changing animation to go up")
-        this.out_anim = "animate__backOutDown";
-        this.in_anim = "animate__backInDown";
+        this.out_anim = "animate__fadeOutDown";
+        this.in_anim = "animate__fadeInDown";
       }
 
       return;

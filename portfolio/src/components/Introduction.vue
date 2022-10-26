@@ -62,7 +62,6 @@
         this.$emit('input', value);
       },
       parentSwitchAnimation(val){
-        console.log("emitting")
         this.$emit('switchAnim',val);
       }
     }
