@@ -42,7 +42,7 @@
     data: () => ({
       projectNum: 5
     }),
-    props: ['val'],
+    props: ['val','in_anim'],
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);

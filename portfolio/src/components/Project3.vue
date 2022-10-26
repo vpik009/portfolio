@@ -2,7 +2,7 @@
 
   <v-container fill-height fluid>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-top" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-top`" justify="center">
       <v-btn
         depressed
         fab
@@ -14,7 +14,7 @@
       ><h6>Prev</h6></v-btn>
     </v-row>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-center" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-center`" justify="center">
         <v-col col="6">
             <h1 class="text-h3">Web Application for Older Women</h1>
             <h3 class="text-h5 mt-4">A web application developed using HTML, CSS, JavaScript, JQuery, Google Firebase, and Google Firestore with a
@@ -38,7 +38,7 @@ technology in a more suitable, for them, environment.</h3>
     </v-row>
 
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-bottom" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-bottom`" justify="center">
       <v-btn
         depressed
         fab
@@ -61,7 +61,7 @@ technology in a more suitable, for them, environment.</h3>
     data: () => ({
       projectNum: 3
     }),
-    props: ['val'],
+    props: ['val','in_anim'],
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);

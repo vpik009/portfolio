@@ -2,7 +2,7 @@
 
   <v-container fill-height fluid>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-top" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-top`" justify="center">
       <v-btn
         depressed
         fab
@@ -10,11 +10,11 @@
         outlined
         x-large
         class="text-bold"
-        @click="updateValue(projectNum-1)"
+        @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Intro</h6></v-btn>
     </v-row>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-center justify-center" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-center`" justify="center">
         <v-col col="6">
             <h1 class="text-h3">Full-Stack Developer - Intern</h1>
             <h3 class="text-h5 mt-4">Worked as an intern at CIBC Technology. Helped in the development of an e-commerce web application for building materials using VueJS, C# Entity-Framework,
@@ -34,7 +34,7 @@ and Signalr under the supervision of the senior project manager.</h3>
         </v-col>
     </v-row>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-bottom" justify="center">
+    <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-bottom`" justify="center">
         <v-btn
             depressed
             fab
@@ -42,7 +42,7 @@ and Signalr under the supervision of the senior project manager.</h3>
             outlined
             x-large
             class="text-bold"
-            @click="updateValue(projectNum+1)"
+            @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
     </v-row>
     
@@ -55,12 +55,15 @@ and Signalr under the supervision of the senior project manager.</h3>
     name: 'ProjectOne',
 
     data: () => ({
-      projectNum: 1
+      projectNum: 1,
     }),
-    props: ['val'],
+    props: ['val','in_anim'],
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);
+      },
+      parentSwitchAnimation(val){
+        this.$emit('switchAnim',val);
       }
     }
   }

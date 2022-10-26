@@ -10,31 +10,27 @@
       </transition> 
       <transition
         mode="out-in"
-        :enter-active-class="`animate__animated ${in_anim}`"
         :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==1">
-        <Project1 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
+        <Project1 v-model="projectNum" v-on:switchAnim="switchAnimation($event)" :in_anim="in_anim"/>
       </transition> 
       <transition
         mode="out-in"
-        :enter-active-class="`animate__animated ${in_anim}`"
         :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==2">
-        <Project2 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
+        <Project2 v-model="projectNum" v-on:switchAnim="switchAnimation($event)" :in_anim="in_anim"/>
       </transition>
       <transition
         mode="out-in"
-        :enter-active-class="`animate__animated ${in_anim}`"
         :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==3">
-        <Project3 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
+        <Project3 v-model="projectNum" v-on:switchAnim="switchAnimation($event)" :in_anim="in_anim"/>
       </transition>
       <transition
         mode="out-in"
-        :enter-active-class="`animate__animated ${in_anim}`"
         :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==4">
-        <Project4 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
+        <Project4 v-model="projectNum" v-on:switchAnim="switchAnimation($event)" :in_anim="in_anim"/>
       </transition>
       <!-- <transition
         mode="out-in"
@@ -82,17 +78,19 @@ export default {
     screen_size: "lg", // xs,sm,md,lg,xl
     projectNum: 0,  // 0 = intro, 1 = first project, 2 = second project ... etc,
     out_anim: "animate__fadeInDown",
-    in_anim: "animate__fadeInUp",
+    in_anim: 'animate__fadeInUp',
+
   }),
   methods: {
     switchAnimation(val){
       if(val == 0){ //  down
         this.out_anim = "animate__fadeOutUp";
-        this.in_anim = "animate__fadeIn";
+        this.in_anim = 'animate__fadeInUp'
+
       }
       else{ // up
         this.out_anim = "animate__fadeOutDown";
-        this.in_anim = "animate__fadeIn";
+        this.in_anim = 'animate__fadeInDown'
       }
 
       return;
