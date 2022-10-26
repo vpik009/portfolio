@@ -45,10 +45,10 @@
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
-                lazy-src="../assets/vlad_lazy.jpg"
-                max-height="300"
-                max-width="375"
-                src="../assets/vlad.jpg"
+                lazy-src="../assets/vlad-searchfinal_lazy.png"
+                max-height="700"
+                max-width="700"
+                src="../assets/vlad-searchfinal.png"
                 class="rounded-xl justify-center"
             ></v-img>
         </v-col>
