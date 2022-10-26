@@ -21,7 +21,7 @@
     </v-row>
     <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
       <v-img
-        lazy-src="../assets/vlad.jpg"
+        lazy-src="../assets/vlad_lazy.jpg"
         max-height="400"
         max-width="500"
         src="../assets/vlad.jpg"

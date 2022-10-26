@@ -24,7 +24,7 @@
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
-                lazy-src="../assets/MARIAfinal.png"
+                lazy-src="../assets/MARIAfinal_lazy.png"
                 max-height="700"
                 max-width="700"
                 src="../assets/MARIAfinal.png"

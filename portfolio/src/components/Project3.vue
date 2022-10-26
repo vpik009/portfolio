@@ -27,7 +27,7 @@ technology in a more suitable, for them, environment.</h3>
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
-                lazy-src="../assets/WITfinal.png"
+                lazy-src="../assets/WITfinal_lazy.png"
                 max-height="700"
                 max-width="700"
                 src="../assets/WITfinal.png"
