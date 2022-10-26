@@ -6,42 +6,42 @@
         mode="out-in"
         leave-active-class="animate__animated animate__fadeOutUp"
         v-if="projectNum==0">
-        <Introduction v-model="projectNum" />
+        <Introduction v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition> 
       <transition
         mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        :enter-active-class="`animate__animated ${in_anim}`"
+        :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==1">
-        <Project1 v-model="projectNum"/>
+        <Project1 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition> 
       <transition
         mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        :enter-active-class="`animate__animated ${in_anim}`"
+        :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==2">
-        <Project2 v-model="projectNum"/>
+        <Project2 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition>
       <transition
         mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        :enter-active-class="`animate__animated ${in_anim}`"
+        :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==3">
-        <Project3 v-model="projectNum"/>
+        <Project3 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition>
       <transition
         mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        :enter-active-class="`animate__animated ${in_anim}`"
+        :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==4">
-        <Project4 v-model="projectNum"/>
+        <Project4 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition>
       <transition
         mode="out-in"
-        enter-active-class="animate__animated animate__fadeIn"
-        leave-active-class="animate__animated animate__fadeOutUp"
+        :enter-active-class="`animate__animated ${in_anim}`"
+        :leave-active-class="`animate__animated ${out_anim}`"
         v-else-if="projectNum==5">
-        <Project5 v-model="projectNum"/>
+        <Project5 v-model="projectNum" v-on:switchAnim="switchAnimation($event)"/>
       </transition>
 
 
@@ -80,7 +80,26 @@ export default {
 
   data: () => ({
     screen_size: "lg", // xs,sm,md,lg,xl
-    projectNum: 0  // 0 = intro, 1 = first project, 2 = second project ... etc
+    projectNum: 0,  // 0 = intro, 1 = first project, 2 = second project ... etc,
+    out_anim: "animate__backOutUp",
+    in_anim: "animate__backInUp",
   }),
+  methods: {
+    switchAnimation(val){
+      if(val == 0){ //  down
+        console.log("changing animation to go down")
+        this.out_anim = "animate__backOutUp";
+        this.in_anim = "animate__backInUp";
+      }
+      else{ // up
+        console.log("changing animation to go up")
+        this.out_anim = "animate__backOutDown";
+        this.in_anim = "animate__backInDown";
+      }
+
+      return;
+    }
+
+  }
 };
 </script>

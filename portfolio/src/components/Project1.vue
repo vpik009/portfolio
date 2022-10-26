@@ -10,7 +10,7 @@
         outlined
         x-large
         class="text-bold"
-        @click="updateValue(projectNum-1)"
+        @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Intro</h6></v-btn>
     </v-row>
 
@@ -42,7 +42,7 @@ and Signalr under the supervision of the senior project manager.</h3>
             outlined
             x-large
             class="text-bold"
-            @click="updateValue(projectNum+1)"
+            @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
     </v-row>
     
@@ -61,6 +61,9 @@ and Signalr under the supervision of the senior project manager.</h3>
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);
+      },
+      parentSwitchAnimation(val){
+        this.$emit('switchAnim',val);
       }
     }
   }

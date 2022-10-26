@@ -10,7 +10,7 @@
         outlined
         x-large
         class="text-bold"
-        @click="updateValue(projectNum-1)"
+        @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Prev</h6></v-btn>
     </v-row>
 
@@ -46,7 +46,7 @@ technology in a more suitable, for them, environment.</h3>
         outlined
         x-large
         class="text-bold"
-        @click="updateValue(projectNum+1)"
+        @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
       ><h6>Next</h6></v-btn>
     </v-row>
     
@@ -65,6 +65,9 @@ technology in a more suitable, for them, environment.</h3>
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);
+      },
+      parentSwitchAnimation(val){
+        this.$emit('switchAnim',val);
       }
     }
   }

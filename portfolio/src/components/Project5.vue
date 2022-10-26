@@ -10,7 +10,7 @@
         outlined
         x-large
         class="text-bold"
-        @click="updateValue(projectNum-1)"
+        @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Prev</h6></v-btn>
     </v-row>
 
@@ -46,6 +46,9 @@
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);
+      },
+      parentSwitchAnimation(val){
+        this.$emit('switchAnim',val);
       }
     }
   }
