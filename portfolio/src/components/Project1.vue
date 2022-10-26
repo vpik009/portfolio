@@ -14,7 +14,7 @@
         @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Intro</h6></v-btn>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex align-top mt-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex align-top mt-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
       <v-btn
         depressed
         fab
@@ -25,7 +25,7 @@
         style="transform: scale(2);"
         @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Intro</h6></v-btn>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-top`" justify="center" v-else>
       <v-btn
         depressed
@@ -59,7 +59,7 @@ and Signalr under the supervision of the senior project manager.</h3>
             
         </v-col>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-center`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-center`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
         <v-col col="6" class="mt-6 ml-6">
             <h1 class="text-h3">Full-Stack Developer - Intern</h1>
             <h3 class="text-h4 mt-4">Worked as an intern at CIBC Technology. Helped in the development of an e-commerce web application for building materials using VueJS, C# Entity-Framework,
@@ -68,16 +68,18 @@ and Signalr under the supervision of the senior project manager.</h3>
 
         </v-col>
         <v-col col="6" class="justify-center">
+          <div>
             <v-img
                 lazy-src="../assets/ebuildfinal_lazy.png"
                 max-height="1000"
                 max-width="1000"
                 src="../assets/ebuildfinal.png"
-                class="rounded-xl justify-center"
+                class="rounded-xl justify-center ml-16"
             ></v-img>
+          </div>
             
         </v-col>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-center`" justify="center" v-else>
         <v-col col="6">
             <h1 class="text-h3">Full-Stack Developer - Intern</h1>
@@ -111,7 +113,7 @@ and Signalr under the supervision of the senior project manager.</h3>
             @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-bottom mt-4 mb-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-bottom mt-4 mb-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
         <v-btn
             depressed
             fab
@@ -122,7 +124,7 @@ and Signalr under the supervision of the senior project manager.</h3>
             style="transform: scale(2);"
             @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-bottom`" justify="center" v-else>
         <v-btn
             depressed

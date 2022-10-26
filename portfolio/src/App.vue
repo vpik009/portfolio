@@ -73,7 +73,6 @@ export default {
     icons2.setAttribute('src', "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
     document.head.appendChild(icons2)
 
-    console.log("size:",this.$vuetify.breakpoint.name)
   },
 
   data: () => ({

@@ -25,7 +25,7 @@
       <!--SM-->
       <!--MD-->
       <!--LG-->
-    <v-row class=" mt-16" justify="center" v-if="this.$vuetify.breakpoint.name == 'lg' || this.$vuetify.breakpoint.name == 'md' || this.$vuetify.breakpoint.name == 'sm'">
+    <v-row class=" mt-16" justify="center" v-else>
 
         <div
           class=" animate__animated animate__backInUp text-h2"
@@ -45,7 +45,7 @@
         
     </v-row>
     <!--XL-->
-    <v-row class=" mt-16" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row class=" mt-16" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
 
         <div
           class=" animate__animated animate__backInUp text-h1"
@@ -63,9 +63,9 @@
           v-text="'Pikulin'"
         />
         
-    </v-row>
+    </v-row> -->
 
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
       <v-img
         lazy-src="../assets/vlad_lazy.jpg"
         max-height="800"
@@ -73,8 +73,8 @@
         src="../assets/vlad.jpg"
         class="rounded-xl justify-center"
       ></v-img>
-    </v-row>
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-else>
+    </v-row> -->
+    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
       <v-img
         lazy-src="../assets/vlad_lazy.jpg"
         max-height="400"
@@ -85,18 +85,18 @@
     </v-row>
 
 
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
       <a style="text-decoration: none;color: inherit;" href="https://www.linkedin.com/in/vladislav-pikulin-77335821a/" target="_blank"><ion-icon size="large" name="logo-linkedin" class="mr-16" style="transform: scale(2);"></ion-icon></a>
       <a style="text-decoration: none;color: inherit;" href="https://github.com/vpik009" target="_blank"><ion-icon size="large" name="logo-github" style="transform: scale(2);"></ion-icon></a>
       <a style="text-decoration: none;color: inherit;" href="https://drive.google.com/file/d/10VlmN5UvOiTZB8dY7IAikBf9b7kCYQN5/view?usp=sharing" target="_blank"><ion-icon size="large" name="attach-outline" class="ml-16" style="transform: scale(2);"></ion-icon></a>
-    </v-row>
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-else>
+    </v-row> -->
+    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
       <a style="text-decoration: none;color: inherit;" href="https://www.linkedin.com/in/vladislav-pikulin-77335821a/" target="_blank"><ion-icon size="large" name="logo-linkedin" class="mr-3"></ion-icon></a>
       <a style="text-decoration: none;color: inherit;" href="https://github.com/vpik009" target="_blank"><ion-icon size="large" name="logo-github" ></ion-icon></a>
       <a style="text-decoration: none;color: inherit;" href="https://drive.google.com/file/d/10VlmN5UvOiTZB8dY7IAikBf9b7kCYQN5/view?usp=sharing" target="_blank"><ion-icon size="large" name="attach-outline" class="ml-3"></ion-icon></a>
     </v-row>
 
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-if="this.$vuetify.breakpoint.name == 'xl'">
       <v-btn
         depressed
         fab
@@ -107,8 +107,8 @@
         style="transform: scale(2);"
         @click="parentSwitchAnimation(0), updateValue(projectNum+1)"
       ><h6>Projects</h6></v-btn>
-    </v-row>
-    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center" v-else>
+    </v-row> -->
+    <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
       <v-btn
         depressed
         fab

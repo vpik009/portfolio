@@ -14,7 +14,7 @@
         @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Prev</h6></v-btn>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex align-top mt-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex align-top mt-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
       <v-btn
         depressed
         fab
@@ -25,7 +25,7 @@
         style="transform: scale(2);"
         @click="parentSwitchAnimation(1); updateValue(projectNum-1)"
       ><h6>Prev</h6></v-btn>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-top`" justify="center" v-else>
       <v-btn
         depressed
@@ -61,7 +61,7 @@ technology in a more suitable, for them, environment.</h3>
             
         </v-col>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-center`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-center`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
         <v-col col="6">
             <h1 class="text-h3">Web Application for Older Women</h1>
             <h3 class="text-h4 mt-4">A web application developed using HTML, CSS, JavaScript, JQuery, Google Firebase, and Google Firestore with a
@@ -78,11 +78,11 @@ technology in a more suitable, for them, environment.</h3>
                 max-height="1000"
                 max-width="1000"
                 src="../assets/WITfinal.png"
-                class="rounded-xl justify-center"
+                class="rounded-xl justify-center ml-16"
             ></v-img>
             
         </v-col>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-center`" justify="center" v-else>
         <v-col col="6">
             <h1 class="text-h3">Web Application for Older Women</h1>
@@ -118,7 +118,7 @@ technology in a more suitable, for them, environment.</h3>
             @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
     </v-row>
-    <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-bottom mt-4 mb-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
+    <!-- <v-row :class="`animate__animated ${in_anim} d-flex ml-1 align-bottom mt-4 mb-4`" justify="center" v-else-if="this.$vuetify.breakpoint.name == 'xl'">
         <v-btn
             depressed
             fab
@@ -129,7 +129,7 @@ technology in a more suitable, for them, environment.</h3>
             style="transform: scale(2);"
             @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
         ><h6>Next</h6></v-btn>
-    </v-row>
+    </v-row> -->
     <v-row :class="`animate__animated ${in_anim} d-flex ml-4 align-bottom`" justify="center" v-else>
       <v-btn
         depressed
