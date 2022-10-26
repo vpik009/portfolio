@@ -29,9 +29,9 @@
       ></v-img>
     </v-row>
     <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
-      <a style="text-decoration: none;color: inherit;" href="https://www.linkedin.com/in/vladislav-pikulin-77335821a/"><ion-icon size="large" name="logo-linkedin" class="mr-3"></ion-icon></a>
-      <a style="text-decoration: none;color: inherit;" href="https://github.com/vpik009"><ion-icon size="large" name="logo-github" ></ion-icon></a>
-      <a style="text-decoration: none;color: inherit;" href="https://drive.google.com/file/d/10VlmN5UvOiTZB8dY7IAikBf9b7kCYQN5/view?usp=sharing"><ion-icon size="large" name="attach-outline" class="ml-3"></ion-icon></a>
+      <a style="text-decoration: none;color: inherit;" href="https://www.linkedin.com/in/vladislav-pikulin-77335821a/" target="_blank"><ion-icon size="large" name="logo-linkedin" class="mr-3"></ion-icon></a>
+      <a style="text-decoration: none;color: inherit;" href="https://github.com/vpik009" target="_blank"><ion-icon size="large" name="logo-github" ></ion-icon></a>
+      <a style="text-decoration: none;color: inherit;" href="https://drive.google.com/file/d/10VlmN5UvOiTZB8dY7IAikBf9b7kCYQN5/view?usp=sharing" target="_blank"><ion-icon size="large" name="attach-outline" class="ml-3"></ion-icon></a>
     </v-row>
     <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
       <v-btn
