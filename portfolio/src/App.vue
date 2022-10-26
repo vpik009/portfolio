@@ -88,11 +88,11 @@ export default {
     switchAnimation(val){
       if(val == 0){ //  down
         this.out_anim = "animate__fadeOutUp";
-        this.in_anim = "animate__fadeInUp";
+        this.in_anim = "animate__fadeIn";
       }
       else{ // up
         this.out_anim = "animate__fadeOutDown";
-        this.in_anim = "animate__fadeInDown";
+        this.in_anim = "animate__fadeIn";
       }
 
       return;
