@@ -72,10 +72,11 @@ export default {
     let icons2 = document.createElement('script')
     icons2.setAttribute('src', "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js")
     document.head.appendChild(icons2)
+
+    console.log("size:",this.$vuetify.breakpoint.name)
   },
 
   data: () => ({
-    screen_size: "lg", // xs,sm,md,lg,xl
     projectNum: 0,  // 0 = intro, 1 = first project, 2 = second project ... etc,
     out_anim: "animate__fadeInDown",
     in_anim: 'animate__fadeInUp',
