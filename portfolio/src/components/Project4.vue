@@ -14,10 +14,13 @@
       ><h6>Prev</h6></v-btn>
     </v-row>
 
-    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-top" justify="center">
+    <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-center" justify="center">
         <v-col col="6">
-            <h1 class="text-h3">4. Title of the project</h1>
-            <h3 class="text-h5 mt-4">Discussion here</h3>
+            <h1 class="text-h3">Vlad-Search</h1>
+            <h3 class="text-h5 mt-4">A small Web Search Engine project. Can be used to search for any public domains on the world wide web.</h3>
+            <h3 class="subtitle-1 mt-4">• Developed using bing's web search API</h3>
+            <h3 class="subtitle-1">• Tools used: VueJS and Quasar</h3>
+            <h3 class="subtitle-1">• Optimized for various screen sizes</h3>
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
