@@ -21,6 +21,27 @@
             <h3 class="subtitle-1 mt-4">• Developed using bing's web search API</h3>
             <h3 class="subtitle-1">• Tools used: VueJS and Quasar</h3>
             <h3 class="subtitle-1">• Optimized for various screen sizes</h3>
+            <div class="text-center">
+
+              <a style="text-decoration: none;color: inherit;" href="https://github.com/vpik009/Vlad-Search" target="_blank">
+                <v-btn depressed
+                  class="mt-4 ml-4"
+                >
+                  View Source Code
+                </v-btn>
+              </a>
+
+              <a style="text-decoration: none;color: inherit;" href="https://vpik009.github.io/Vlad-Search" target="_blank">
+                <v-btn
+                  class="mt-4 ml-4"
+                  outlined
+                  color="indigo"
+                >
+                  View Project
+                </v-btn>
+              </a>
+
+            </div>
         </v-col>
         <v-col col="6" class="ml-10">
             <v-img
@@ -30,13 +51,12 @@
                 src="../assets/vlad.jpg"
                 class="rounded-xl justify-center"
             ></v-img>
-            
         </v-col>
     </v-row>
 
 
     <v-row class="animate__animated animate__fadeInUp d-flex ml-4 align-bottom" justify="center">
-      <v-btn
+      <!-- <v-btn
         depressed
         fab
         icon
@@ -44,7 +64,7 @@
         x-large
         class="text-bold"
         @click="parentSwitchAnimation(0); updateValue(projectNum+1)"
-      ><h6>Next</h6></v-btn>
+      ><h6>Next</h6></v-btn> -->
     </v-row>
     
   </v-container>
