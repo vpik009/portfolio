@@ -48,7 +48,13 @@
             <h3 class="caption mt-4">[Not open source as the project may potentially be used as a real product in the future]</h3>
         </v-col>
         <v-col col="6">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/MARIAfinal_lazy.png"
                 max-height="320"
                 max-width="320"
@@ -86,7 +92,13 @@
             <h3 class="caption mt-4">[Not open source as the project may potentially be used as a real product in the future]</h3>
         </v-col>
         <v-col col="6" class="ml-10">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/MARIAfinal_lazy.png"
                 max-height="700"
                 max-width="700"
@@ -142,7 +154,16 @@
   export default {
     name: 'ProjectTwo',
 
+    mounted: function () {
+      this.$nextTick(function () {
+        // Code that will run only after the
+        // entire view has been rendered
+        this.loadingImage = false;
+      })
+    },
+
     data: () => ({
+      loadingImage: true,
       projectNum: 2
     }),
     props: ['val','in_anim'],

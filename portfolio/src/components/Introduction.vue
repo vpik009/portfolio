@@ -75,7 +75,13 @@
       ></v-img>
     </v-row> -->
     <v-row class="animate__animated animate__fadeInUp animate__delay-1s" justify="center">
+      <v-progress-circular
+        v-if="loadingImage"
+        indeterminate
+        color="grey"
+      ></v-progress-circular>
       <v-img
+        v-else
         lazy-src="../assets/vlad_lazy.jpg"
         max-height="400"
         max-width="500"
@@ -128,10 +134,20 @@
   export default {
     name: 'IntroDuction',
 
+    mounted: function () {
+      this.$nextTick(function () {
+        // Code that will run only after the
+        // entire view has been rendered
+        this.loadingImage = false;
+      })
+    },
+
     data: () => ({
+      loadingImage: true,
       projectNum: 0
     }),
     props: ['val'],
+    
     methods: {
       updateValue: function (value) {
         this.$emit('input', value);

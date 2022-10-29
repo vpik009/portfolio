@@ -49,7 +49,13 @@ and Signalr under the supervision of the senior project manager.</h3>
 
         </v-col>
         <v-col col="6" class="justify-center">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/ebuildfinal_lazy.png"
                 max-height="320"
                 max-width="320"
@@ -89,7 +95,13 @@ and Signalr under the supervision of the senior project manager.</h3>
 
         </v-col>
         <v-col col="6" class="ml-10 justify-center">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/ebuildfinal_lazy.png"
                 max-height="700"
                 max-width="700"
@@ -145,7 +157,16 @@ and Signalr under the supervision of the senior project manager.</h3>
   export default {
     name: 'ProjectOne',
 
+    mounted: function () {
+      this.$nextTick(function () {
+        // Code that will run only after the
+        // entire view has been rendered
+        this.loadingImage = false;
+      })
+    },
+
     data: () => ({
+      loadingImage: true,
       projectNum: 1,
     }),
     props: ['val','in_anim'],

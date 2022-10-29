@@ -69,7 +69,13 @@
             </div>
         </v-col>
         <v-col col="6" class="mt-10">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/vlad-searchfinal_lazy.png"
                 max-height="320"
                 max-width="320"
@@ -147,7 +153,13 @@
             </div>
         </v-col>
         <v-col col="6" class="ml-10">
+            <v-progress-circular
+              v-if="loadingImage"
+              indeterminate
+              color="grey"
+            ></v-progress-circular>
             <v-img
+                v-else
                 lazy-src="../assets/vlad-searchfinal_lazy.png"
                 max-height="700"
                 max-width="700"
@@ -178,7 +190,16 @@
   export default {
     name: 'ProjectFour',
 
+    mounted: function () {
+      this.$nextTick(function () {
+        // Code that will run only after the
+        // entire view has been rendered
+        this.loadingImage = false;
+      })
+    },
+
     data: () => ({
+      loadingImage: true,
       projectNum: 4
     }),
     props: ['val','in_anim'],
